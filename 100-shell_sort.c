@@ -3,9 +3,9 @@
  * shell_sort -Sort an array using shell_sort algorithm
  * @array: array
  * @size: size of the array
- * Return: Null
+ * Return: NULL
  **/
-void shell_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size)
 {
 	unsigned int gap = 1, i, j;
 	int temp;
