@@ -1,10 +1,10 @@
 #include "sort.h"
 
 /**
- * swap - swaps two integers.
- * @xp: Pointer to the first interger.
- * @yp: Pointer to the second integer.
- * Return: Nothing.
+ *swap - swaps two integers.
+ *@xp: Pointer to the first integer.
+ *@yp: Pointer tothe second integer.
+ *Return: Nothing.
  */
 void swap(int *xp, int *yp)
 {
@@ -14,18 +14,17 @@ void swap(int *xp, int *yp)
 }
 
 /**
- * bubble_sort - sorts an array of integers in ascending order using
- * the Bubble sort algorithm
- * @array: An array of intergers to be sorted.
- * @size: Size of the array.
- * Return: Nothing.
+ *bubble_sort - Sorts an array of integers in ascending order
+ *@array: An array of integers to be sorted.
+ *@size: Size of the array.
+ *Return: Nothing.
  */
-void bubble_sort(int *array, size_t size);
+void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
 
 	if (array == NULL || size == 0)
-		rteurn;
+		return;
 
 	for (i = 0; i < size - 1; i++)
 	{
